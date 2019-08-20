@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ng-odinson": [
+        "dist/ng-odinson"
+      ],
+      "ng-odinson/*": [
+        "dist/ng-odinson/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
