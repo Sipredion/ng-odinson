@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
-import { NgOdinsonComponent } from './ng-odinson.component';
+import {ToolbarModule} from './modules/toolbar/toolbar.module';
 
 
 
 @NgModule({
-  declarations: [NgOdinsonComponent],
+  declarations: [],
   imports: [
+    ToolbarModule
   ],
-  exports: [NgOdinsonComponent]
+  exports: [
+    ToolbarModule
+  ]
 })
 export class NgOdinsonModule { }
