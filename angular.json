@@ -5,6 +5,11 @@
   "projects": {
     "ng-odinson": {
       "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "styleext": "scss"
+        }
+      },
       "root": "projects/ng-odinson",
       "sourceRoot": "projects/ng-odinson/src",
       "prefix": "odn",
