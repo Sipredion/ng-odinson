@@ -2,6 +2,8 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {NgOdinsonModule} from '../../../../../ng-odinson/src/lib/ng-odinson.module';
 import {ApplicationConfig} from '../../../../../ng-odinson/src/lib/models/application-config.model';
+import { NavigationComponent } from './components/navigation/navigation.component';
+import {RouterModule} from '@angular/router';
 
 const appConfig: ApplicationConfig = {
   theme: {
@@ -12,13 +14,17 @@ const appConfig: ApplicationConfig = {
 };
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    NavigationComponent
+  ],
   imports: [
     CommonModule,
-    NgOdinsonModule.forRoot(appConfig)
+    NgOdinsonModule.forRoot(appConfig),
+    RouterModule
   ],
   exports: [
-    NgOdinsonModule
+    NgOdinsonModule,
+    NavigationComponent
   ]
 })
 export class SharedModule {

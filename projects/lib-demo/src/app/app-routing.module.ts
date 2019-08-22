@@ -5,6 +5,7 @@ import {LandingComponent} from './modules/public/components/landing/landing.comp
 
 const routes: Routes = [
   {path: 'landing', component: LandingComponent},
+  {path: 'docs', loadChildren: () => import('./modules/docs/docs.module').then(m => m.DocsModule)},
   {path: '', pathMatch: 'full', redirectTo: '/landing'}
 ];
 
