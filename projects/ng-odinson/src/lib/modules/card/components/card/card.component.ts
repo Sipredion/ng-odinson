@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {SizeOptionsModel} from '../../../../models/size-options.model';
 
 @Component({
   selector: 'odn-card',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
 
-  constructor() { }
+  @Input() width?: SizeOptionsModel;
+  @Input() height?: SizeOptionsModel;
+
+  constructor() {
+  }
 
   ngOnInit() {
   }

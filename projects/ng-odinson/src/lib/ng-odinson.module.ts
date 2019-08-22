@@ -3,6 +3,8 @@ import {ToolbarModule} from './modules/toolbar/toolbar.module';
 import {NgOdinsonService} from './services/ng-odinson.service';
 import {CardModule} from './modules/card/card.module';
 import {ButtonsModule} from './modules/buttons/buttons.module';
+import {AlertModule} from './modules/alert/alert.module';
+import {PanelModule} from './modules/panel/panel.module';
 
 
 @NgModule({
@@ -10,12 +12,16 @@ import {ButtonsModule} from './modules/buttons/buttons.module';
   imports: [
     ToolbarModule,
     CardModule,
-    ButtonsModule
+    ButtonsModule,
+    AlertModule,
+    PanelModule
   ],
   exports: [
     ToolbarModule,
     CardModule,
-    ButtonsModule
+    ButtonsModule,
+    AlertModule,
+    PanelModule
   ],
   providers: [NgOdinsonService]
 })

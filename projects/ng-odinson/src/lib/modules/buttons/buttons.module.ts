@@ -1,7 +1,6 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { GhostButtonDirective } from './directives/ghost-button.directive';
-
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {GhostButtonDirective} from './directives/ghost/ghost-button.directive';
 
 
 @NgModule({
@@ -15,4 +14,5 @@ import { GhostButtonDirective } from './directives/ghost-button.directive';
     GhostButtonDirective
   ]
 })
-export class ButtonsModule { }
+export class ButtonsModule {
+}

@@ -1,0 +1,64 @@
+@import "../../../../scss/variables/theme-vars";
+
+%odn-alert-base {
+  border-radius: 6px;
+  border: 1px solid transparent;
+  padding: .75rem;
+  margin: .5rem;
+}
+
+.odn-alert-primary {
+  @extend %odn-alert-base;
+  border-color: $primary;
+  background-color: rgba($primary, 0.4);
+  box-shadow: 0 2px 3px rgba($primary, 0.3), 0 0 0 1px rgba($primary, 0.3)
+}
+
+.odn-alert-secondary {
+  @extend %odn-alert-base;
+  border-color: $accent;
+  background-color: rgba($accent, 0.4);
+  box-shadow: 0 2px 3px rgba($accent, 0.3), 0 0 0 1px rgba($accent, 0.3)
+}
+
+.odn-alert-success {
+  @extend %odn-alert-base;
+  border-color: $success;
+  background-color: rgba($success, 0.4);
+  box-shadow: 0 2px 3px rgba($success, 0.3), 0 0 0 1px rgba($success, 0.3)
+}
+
+.odn-alert-info {
+  @extend %odn-alert-base;
+  border-color: $info;
+  background-color: rgba($info, 0.4);
+  box-shadow: 0 2px 3px rgba($info, 0.3), 0 0 0 1px rgba($info, 0.3)
+}
+
+.odn-alert-warning {
+  @extend %odn-alert-base;
+  border-color: $warning;
+  background-color: rgba($warning, 0.4);
+  box-shadow: 0 2px 3px rgba($warning, 0.3), 0 0 0 1px rgba($warning, 0.3)
+}
+
+.odn-alert-danger {
+  @extend %odn-alert-base;
+  border-color: $danger;
+  background-color: rgba($danger, 0.4);
+  box-shadow: 0 2px 3px rgba($danger, 0.3), 0 0 0 1px rgba($danger, 0.3)
+}
+
+.odn-alert-light {
+  @extend %odn-alert-base;
+  border-color: $light;
+  background-color: rgba($light, 0.4);
+  box-shadow: 0 2px 3px rgba($light, 0.3), 0 0 0 1px rgba($light, 0.3)
+}
+
+.odn-alert-dark {
+  @extend %odn-alert-base;
+  border-color: $dark;
+  background-color: rgba($dark, 0.4);
+  box-shadow: 0 2px 3px rgba($dark, 0.3), 0 0 0 1px rgba($dark, 0.3)
+}

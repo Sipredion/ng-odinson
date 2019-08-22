@@ -1,0 +1,34 @@
+@import "../../mxins/create-panel";
+@import "../../variables/theme-vars";
+
+.odn-panel-primary {
+  @include createPanel($primary)
+}
+
+.odn-panel-secondary {
+  @include createPanel($accent)
+}
+
+.odn-panel-success {
+  @include createPanel($success)
+}
+
+.odn-panel-info {
+  @include createPanel($info)
+}
+
+.odn-panel-warning {
+  @include createPanel($warning)
+}
+
+.odn-panel-danger {
+  @include createPanel($danger)
+}
+
+.odn-panel-light {
+  @include createPanel($light)
+}
+
+.odn-panel-dark {
+  @include createPanel($dark)
+}

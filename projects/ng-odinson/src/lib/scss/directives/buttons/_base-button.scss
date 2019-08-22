@@ -1,0 +1,12 @@
+.odn-button {
+  border: none;
+  background-color: transparent;
+  font-size: .85rem;
+  margin: 0 .5rem;
+  padding: .25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: box-shadow, background-color .2s ease;
+}

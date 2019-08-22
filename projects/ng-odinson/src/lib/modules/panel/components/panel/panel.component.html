@@ -1,0 +1,6 @@
+<div class="mx-auto" [ngClass]="[
+    color ? 'odn-panel-' + color : 'odn-panel-dark',
+    width ? 'w-' + width : '',
+    height ? 'h-' + height : '']">
+  <ng-content></ng-content>
+</div>

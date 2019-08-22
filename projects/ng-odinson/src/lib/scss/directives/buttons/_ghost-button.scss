@@ -1,0 +1,34 @@
+@import "../../variables/theme-vars";
+@import "../../mxins/create-ghost-button";
+
+.ghost-button-primary {
+  @include createGhostButton($primary)
+}
+
+.ghost-button-secondary {
+  @include createGhostButton($accent)
+}
+
+.ghost-button-success {
+  @include createGhostButton($success)
+}
+
+.ghost-button-info {
+  @include createGhostButton($info)
+}
+
+.ghost-button-warning {
+  @include createGhostButton($warning)
+}
+
+.ghost-button-danger {
+  @include createGhostButton($danger)
+}
+
+.ghost-button-dark {
+  @include createGhostButton($dark)
+}
+
+.ghost-button-light {
+  @include createGhostButton($light)
+}

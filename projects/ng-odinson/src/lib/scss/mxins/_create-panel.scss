@@ -1,0 +1,10 @@
+@mixin createPanel($color) {
+  color: darken($color, 30%);
+  background-color: rgba($color, 0.6);
+  @if ($color == 'dark') {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.1);
+  } @else {
+    box-shadow: 0 2px 3px rgba($color, 0.4), 0 0 0 1px rgba($color, 0.4);
+  }
+  border: 1px solid rgba($color, 0.4);
+}

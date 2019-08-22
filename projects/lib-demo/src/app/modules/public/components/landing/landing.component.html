@@ -1,24 +1,30 @@
 <header>
   <odn-toolbar>
-    <nav class="nav-bar">
-      <!--// TODO: replace these with <odn-link>s -->
-      <a class="link">Link 1</a>
-      <a class="link">Link 2</a>
-      <a class="link">Link 3</a>
-      <a class="link">Link 4</a>
-    </nav>
+    <div class="nav-bar">
+      <div class="logo w-50">
+        Odinson
+      </div>
+      <nav class="links w-50">
+        <button odnGhostButton color="primary" class="w-15 mx-auto">Docs</button>
+        <button odnGhostButton color="primary" class="w-15 mx-auto">Features</button>
+        <button odnGhostButton color="primary" class="w-15 mx-auto">Guides</button>
+        <button odnGhostButton color="primary" class="w-15 mx-auto">Github</button>
+        <button odnGhostButton color="primary" class="w-15 mx-auto">NPM</button>
+      </nav>
+    </div>
   </odn-toolbar>
 </header>
-
-<div class="content-container">
-  <odn-card>
-    <odn-card-header>
-      <h1 class="text-center">Ng-Odinson</h1>
-    </odn-card-header>
-    <odn-card-body>
-      <div class="main-content">
-        <h3>Hello World</h3>
-      </div>
-    </odn-card-body>
-  </odn-card>
+<div class="mt-4">
+  <odn-panel height="50" width="95" color="secondary">
+    <odn-panel-header>
+      <h2>Welcome to NgOdinson</h2>
+    </odn-panel-header>
+    <odn-panel-body>
+      <p>
+        NgOdinson is a set of unopinionated styled Angular components and directives.
+        It was designed to remove the boilerplate while still allowing you (the developer) to
+        hold full creative control of your components' styling.
+      </p>
+    </odn-panel-body>
+  </odn-panel>
 </div>
