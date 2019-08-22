@@ -5,6 +5,7 @@ import {CardModule} from './modules/card/card.module';
 import {ButtonsModule} from './modules/buttons/buttons.module';
 import {AlertModule} from './modules/alert/alert.module';
 import {PanelModule} from './modules/panel/panel.module';
+import {FloatingMenuModule} from './modules/floating-menu/floating-menu.module';
 
 
 @NgModule({
@@ -14,14 +15,16 @@ import {PanelModule} from './modules/panel/panel.module';
     CardModule,
     ButtonsModule,
     AlertModule,
-    PanelModule
+    PanelModule,
+    FloatingMenuModule
   ],
   exports: [
     ToolbarModule,
     CardModule,
     ButtonsModule,
     AlertModule,
-    PanelModule
+    PanelModule,
+    FloatingMenuModule
   ],
   providers: [NgOdinsonService]
 })

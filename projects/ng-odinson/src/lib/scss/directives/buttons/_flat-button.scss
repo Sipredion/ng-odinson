@@ -1,0 +1,34 @@
+@import "../../variables/theme-vars";
+@import "../../mxins/create-flat-button";
+
+.flat-button-primary {
+  @include createFlatButton($primary)
+}
+
+.flat-button-secondary {
+  @include createFlatButton($accent)
+}
+
+.flat-button-success {
+  @include createFlatButton($success)
+}
+
+.flat-button-info {
+  @include createFlatButton($info)
+}
+
+.flat-button-warning {
+  @include createFlatButton($warning)
+}
+
+.flat-button-danger {
+  @include createFlatButton($danger)
+}
+
+.flat-button-dark {
+  @include createFlatButton($dark)
+}
+
+.flat-button-light {
+  @include createFlatButton($light)
+}

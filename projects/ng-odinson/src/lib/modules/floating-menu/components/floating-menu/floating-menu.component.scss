@@ -1,0 +1,28 @@
+@import "../../../../scss/variables/theme-vars";
+
+.odn-floating-menu {
+  width: 20%;
+  margin: .75rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.floating-menu-content {
+  padding: .75rem 0 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.floating-menu-right {
+  float: right;
+}
+
+.floating-menu-left {
+  float: left;
+}
+
+.floating-menu-divider {
+  border-top: 1px solid rgba($primary, 0.7);
+  width: 45%;
+  margin: .3rem auto .75rem auto;
+}

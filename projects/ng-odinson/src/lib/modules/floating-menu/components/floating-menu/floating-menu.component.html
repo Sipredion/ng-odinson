@@ -1,0 +1,7 @@
+<div class="odn-floating-menu" [ngClass]="position === 'right' ? 'floating-menu-right' : 'floating-menu-left'">
+  <div class="floating-menu-content">
+    <h3 class="text-center">{{title}}</h3>
+    <hr class="floating-menu-divider">
+    <ng-content></ng-content>
+  </div>
+</div>

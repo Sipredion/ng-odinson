@@ -1,17 +1,20 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {GhostButtonDirective} from './directives/ghost/ghost-button.directive';
+import {FlatButtonDirective} from './directives/flat/flat-button.directive';
 
 
 @NgModule({
   declarations: [
-    GhostButtonDirective
+    GhostButtonDirective,
+    FlatButtonDirective
   ],
   imports: [
     CommonModule
   ],
   exports: [
-    GhostButtonDirective
+    GhostButtonDirective,
+    FlatButtonDirective
   ]
 })
 export class ButtonsModule {
