@@ -6,6 +6,7 @@ import {ButtonsModule} from './modules/buttons/buttons.module';
 import {AlertModule} from './modules/alert/alert.module';
 import {PanelModule} from './modules/panel/panel.module';
 import {FloatingMenuModule} from './modules/floating-menu/floating-menu.module';
+import {DropdownModule} from './modules/dropdown/dropdown.module';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import {FloatingMenuModule} from './modules/floating-menu/floating-menu.module';
     ButtonsModule,
     AlertModule,
     PanelModule,
-    FloatingMenuModule
+    FloatingMenuModule,
+    DropdownModule
   ],
   exports: [
     ToolbarModule,
@@ -24,7 +26,8 @@ import {FloatingMenuModule} from './modules/floating-menu/floating-menu.module';
     ButtonsModule,
     AlertModule,
     PanelModule,
-    FloatingMenuModule
+    FloatingMenuModule,
+    DropdownModule
   ],
   providers: [NgOdinsonService]
 })

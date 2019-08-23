@@ -1,0 +1,9 @@
+@import "../variables/theme-vars";
+
+@function darkOrLight($color) {
+  @if (lightness($color) > 50) {
+    @return $dark;
+  } @else {
+    @return $light;
+  }
+}

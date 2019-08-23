@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {DocsDropdownModel} from '../../models/docs-dropdown.model';
 
 @Component({
   selector: 'app-docs-home',
@@ -7,9 +8,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DocsHomeComponent implements OnInit {
 
-  constructor() { }
+  docsDropdown: DocsDropdownModel;
 
-  ngOnInit() {
+  constructor() {
   }
 
+  ngOnInit() {
+    this.docsDropdown = new DocsDropdownModel();
+  }
+
+  openCloseDropdown(item?: string) {
+    if (item) {
+      this.docsDropdown[item] === 'open' ?
+        this.docsDropdown[item] = 'closed' :
+        this.docsDropdown[item] = 'open';
+    }
+
+    // close the previously opened dropdown
+    Object.keys(this.docsDropdown).forEach(key => {
+      if (key !== item) {
+        this.docsDropdown[key] = 'closed';
+      }
+    });
+  }
 }

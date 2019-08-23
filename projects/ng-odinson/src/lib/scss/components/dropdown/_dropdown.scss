@@ -1,0 +1,51 @@
+@import "../../../scss/variables/theme-vars";
+@import "../../mxins/create-dropdown";
+
+%odn-dropdown {
+  position: relative;
+  height: 0;
+  opacity: 0;
+  margin: auto;
+  font-size: 50%;
+  z-index: 0;
+}
+
+.odn-dropdown-primary {
+  @extend %odn-dropdown;
+  @include createDropdown($primary);
+}
+
+.odn-dropdown-secondary {
+  @extend %odn-dropdown;
+  @include createDropdown($accent);
+}
+
+.odn-dropdown-success {
+  @extend %odn-dropdown;
+  @include createDropdown($success);
+}
+
+.odn-dropdown-info {
+  @extend %odn-dropdown;
+  @include createDropdown($info);
+}
+
+.odn-dropdown-warning {
+  @extend %odn-dropdown;
+  @include createDropdown($warning);
+}
+
+.odn-dropdown-danger {
+  @extend %odn-dropdown;
+  @include createDropdown($danger);
+}
+
+.odn-dropdown-light {
+  @extend %odn-dropdown;
+  @include createDropdown($light);
+}
+
+.odn-dropdown-dark {
+  @extend %odn-dropdown;
+  @include createDropdown($dark);
+}

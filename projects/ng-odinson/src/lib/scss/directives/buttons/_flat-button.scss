@@ -2,33 +2,65 @@
 @import "../../mxins/create-flat-button";
 
 .flat-button-primary {
-  @include createFlatButton($primary)
+  @include createFlatButton($primary, false)
 }
 
 .flat-button-secondary {
-  @include createFlatButton($accent)
+  @include createFlatButton($accent, false)
 }
 
 .flat-button-success {
-  @include createFlatButton($success)
+  @include createFlatButton($success, false)
 }
 
 .flat-button-info {
-  @include createFlatButton($info)
+  @include createFlatButton($info, false)
 }
 
 .flat-button-warning {
-  @include createFlatButton($warning)
+  @include createFlatButton($warning, false)
 }
 
 .flat-button-danger {
-  @include createFlatButton($danger)
+  @include createFlatButton($danger, false)
 }
 
 .flat-button-dark {
-  @include createFlatButton($dark)
+  @include createFlatButton($dark, false)
 }
 
 .flat-button-light {
-  @include createFlatButton($light)
+  @include createFlatButton($light, false)
+}
+
+.flat-button-active-primary {
+  @include createFlatButton($primary, true)
+}
+
+.flat-button-active-secondary {
+  @include createFlatButton($accent, true)
+}
+
+.flat-button-active-success {
+  @include createFlatButton($success, true)
+}
+
+.flat-button-active-info {
+  @include createFlatButton($info, true)
+}
+
+.flat-button-active-warning {
+  @include createFlatButton($warning, true)
+}
+
+.flat-button-active-danger {
+  @include createFlatButton($danger, true)
+}
+
+.flat-button-active-dark {
+  @include createFlatButton($dark, true)
+}
+
+.flat-button-active-light {
+  @include createFlatButton($light, true)
 }

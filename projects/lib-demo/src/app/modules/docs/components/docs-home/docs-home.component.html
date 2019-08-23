@@ -1,11 +1,59 @@
 <section class="docs-home">
   <odn-floating-menu>
-    <button odnFlatButton class="py-2">Overview</button>
-    <button odnFlatButton class="py-2">Customize</button>
-    <button odnFlatButton class="py-2">Layout</button>
-    <button odnFlatButton class="py-2">Form</button>
-    <button odnFlatButton class="py-2">Elements</button>
-    <button odnFlatButton class="py-2">Components</button>
+    <button odnFlatButton class="py-2" routerLink="/docs/overview" (click)="openCloseDropdown()">
+      Overview
+    </button>
+    <button odnFlatButton class="py-2" (click)="openCloseDropdown()">
+      Customize
+    </button>
+    <button odnFlatButton class="py-2" (click)="openCloseDropdown()">
+      Layout
+    </button>
+    <button odnFlatButton class="py-2" (click)="openCloseDropdown()">
+      Form
+    </button>
+
+    <button
+      odnFlatButton
+      class="py-2"
+      [active]="docsDropdown.elements === 'open'"
+      (click)="openCloseDropdown('elements')">
+      Elements
+    </button>
+    <odn-dropdown color="primary" class="w-95 mx-auto" [state]="docsDropdown.elements">
+      <button odnFlatButton color="dark">
+        Buttons
+      </button>
+    </odn-dropdown>
+
+    <button
+      odnFlatButton
+      class="py-2"
+      [active]="docsDropdown.components === 'open'"
+      (click)="openCloseDropdown('components')">
+      Components
+    </button>
+    <odn-dropdown color="primary" [state]="docsDropdown.components" class="w-95 mx-auto">
+      <button odnFlatButton color="dark" routerLink="/docs/card" (click)="docsDropdown.components = 'closed'">
+        Card
+      </button>
+      <button odnFlatButton color="dark">
+        Panel
+      </button>
+      <button odnFlatButton color="dark">
+        Alert
+      </button>
+      <button odnFlatButton color="dark">
+        Toolbar
+      </button>
+      <button odnFlatButton color="dark">
+        Floating Menu
+      </button>
+      <button odnFlatButton color="dark">
+        Dropdown
+      </button>
+    </odn-dropdown>
+
   </odn-floating-menu>
-  <h1>Getting Started:</h1>
+  <router-outlet></router-outlet>
 </section>
