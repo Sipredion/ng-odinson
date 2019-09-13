@@ -4,6 +4,8 @@ import {PanelComponent} from './components/panel/panel.component';
 import {PanelBodyComponent} from './components/panel-body/panel-body.component';
 import {PanelHeaderComponent} from './components/panel-header/panel-header.component';
 import {PanelFooterComponent} from './components/panel-footer/panel-footer.component';
+import { PanelMenuComponent } from './components/panel-menu/panel-menu.component';
+import {RouterModule} from '@angular/router';
 
 
 @NgModule({
@@ -11,10 +13,12 @@ import {PanelFooterComponent} from './components/panel-footer/panel-footer.compo
     PanelComponent,
     PanelBodyComponent,
     PanelHeaderComponent,
-    PanelFooterComponent
+    PanelFooterComponent,
+    PanelMenuComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [
     PanelComponent,

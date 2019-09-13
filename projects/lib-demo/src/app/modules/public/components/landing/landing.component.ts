@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {PanelMenuLink} from '../../../../../../../ng-odinson/src/public-api';
 
 @Component({
   selector: 'app-landing',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingComponent implements OnInit {
 
-  constructor() { }
+  panelMenuItems: PanelMenuLink[];
+
+  constructor() {
+  }
 
   ngOnInit() {
+    this.panelMenuItems = [
+      {title: 'Demos', isLink: true, path: ''},
+      {title: 'Cool shit', isLink: true, path: ''},
+      {title: 'Testimonials', isLink: true, path: ''},
+    ];
   }
 
 }

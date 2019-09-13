@@ -1,34 +1,47 @@
 @import "../../mxins/create-panel";
 @import "../../variables/theme-vars";
 
+%odn-panel {
+  border-radius: 10px;
+  min-width: 9rem;
+}
+
 .odn-panel-primary {
+  @extend %odn-panel;
   @include createPanel($primary)
 }
 
 .odn-panel-secondary {
+  @extend %odn-panel;
   @include createPanel($accent)
 }
 
 .odn-panel-success {
+  @extend %odn-panel;
   @include createPanel($success)
 }
 
 .odn-panel-info {
+  @extend %odn-panel;
   @include createPanel($info)
 }
 
 .odn-panel-warning {
+  @extend %odn-panel;
   @include createPanel($warning)
 }
 
 .odn-panel-danger {
+  @extend %odn-panel;
   @include createPanel($danger)
 }
 
 .odn-panel-light {
+  @extend %odn-panel;
   @include createPanel($light)
 }
 
 .odn-panel-dark {
+  @extend %odn-panel;
   @include createPanel($dark)
 }

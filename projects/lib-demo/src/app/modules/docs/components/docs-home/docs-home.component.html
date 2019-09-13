@@ -9,9 +9,37 @@
     <button odnFlatButton class="py-2" (click)="openCloseDropdown()">
       Layout
     </button>
-    <button odnFlatButton class="py-2" (click)="openCloseDropdown()">
+
+    <button
+      odnFlatButton class="py-2"
+      [active]="docsDropdown.form === 'open'"
+      (click)="openCloseDropdown('form')"
+    >
       Form
     </button>
+    <odn-dropdown color="primary" class="w-95 mx-auto" [state]="docsDropdown.form">
+      <button odnFlatButton color="secondary">
+        Input
+      </button>
+      <button odnFlatButton color="secondary">
+        Textarea
+      </button>
+      <button odnFlatButton color="secondary">
+        Select
+      </button>
+      <button odnFlatButton color="secondary">
+        Radio
+      </button>
+      <button odnFlatButton color="secondary">
+        Checkbox
+      </button>
+      <button odnFlatButton color="secondary">
+        Form Control
+      </button>
+      <button odnFlatButton color="secondary">
+        Form Group
+      </button>
+    </odn-dropdown>
 
     <button
       odnFlatButton
@@ -21,8 +49,14 @@
       Elements
     </button>
     <odn-dropdown color="primary" class="w-95 mx-auto" [state]="docsDropdown.elements">
-      <button odnFlatButton color="dark">
+      <button odnFlatButton color="secondary">
         Buttons
+      </button>
+      <button odnFlatButton color="secondary">
+        Animations
+      </button>
+      <button odnFlatButton color="secondary">
+        Directives
       </button>
     </odn-dropdown>
 
@@ -34,26 +68,28 @@
       Components
     </button>
     <odn-dropdown color="primary" [state]="docsDropdown.components" class="w-95 mx-auto">
-      <button odnFlatButton color="dark" routerLink="/docs/card" (click)="docsDropdown.components = 'closed'">
-        Card
-      </button>
-      <button odnFlatButton color="dark">
-        Panel
-      </button>
-      <button odnFlatButton color="dark">
+      <button odnFlatButton color="secondary">
         Alert
       </button>
-      <button odnFlatButton color="dark">
-        Toolbar
+      <button odnFlatButton color="secondary" routerLink="/docs/card" (click)="docsDropdown.components = 'closed'">
+        Card
       </button>
-      <button odnFlatButton color="dark">
+      <button odnFlatButton color="secondary">
+        Dropdown
+      </button>
+      <button odnFlatButton color="secondary">
         Floating Menu
       </button>
-      <button odnFlatButton color="dark">
-        Dropdown
+      <button odnFlatButton color="secondary">
+        Panel
+      </button>
+      <button odnFlatButton color="secondary">
+        Toolbar
       </button>
     </odn-dropdown>
 
   </odn-floating-menu>
-  <router-outlet></router-outlet>
+  <div class="w-75">
+    <router-outlet></router-outlet>
+  </div>
 </section>

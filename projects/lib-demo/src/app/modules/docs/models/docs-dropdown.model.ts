@@ -2,8 +2,9 @@ import {DropdownStateModel} from '../../../../../../ng-odinson/src/lib/models/dr
 
 export class DocsDropdownModel {
 
-  components: DropdownStateModel;
+  form: DropdownStateModel;
   elements: DropdownStateModel;
+  components: DropdownStateModel;
 
   constructor(options?: any) {
     if (options) {

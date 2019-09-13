@@ -2,5 +2,14 @@
     color ? 'odn-panel-' + color : 'odn-panel-dark',
     width ? 'w-' + width : '',
     height ? 'h-' + height : '']">
+  <ng-container *ngIf="menuItems && menuPosition === 'top'">
+    <odn-panel-menu [menuItems]="menuItems"></odn-panel-menu>
+  </ng-container>
   <ng-content></ng-content>
+  <ng-container *ngIf="menuItems && menuPosition === 'bottom'">
+    <odn-panel-menu [menuItems]="menuItems"></odn-panel-menu>
+  </ng-container>
+  <ng-container *ngIf="menuItems && (menuPosition !== 'top' && menuPosition !== 'bottom')">
+    <odn-panel-menu [menuItems]="menuItems"></odn-panel-menu>
+  </ng-container>
 </div>

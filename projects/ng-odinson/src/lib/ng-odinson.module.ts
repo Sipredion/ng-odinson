@@ -7,6 +7,8 @@ import {AlertModule} from './modules/alert/alert.module';
 import {PanelModule} from './modules/panel/panel.module';
 import {FloatingMenuModule} from './modules/floating-menu/floating-menu.module';
 import {DropdownModule} from './modules/dropdown/dropdown.module';
+import {UtilsModule} from './modules/utils/utils.module';
+import {ModalModule} from './modules/modal/modal.module';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import {DropdownModule} from './modules/dropdown/dropdown.module';
     AlertModule,
     PanelModule,
     FloatingMenuModule,
-    DropdownModule
+    DropdownModule,
+    UtilsModule,
+    ModalModule
   ],
   exports: [
     ToolbarModule,
@@ -27,7 +31,9 @@ import {DropdownModule} from './modules/dropdown/dropdown.module';
     AlertModule,
     PanelModule,
     FloatingMenuModule,
-    DropdownModule
+    DropdownModule,
+    UtilsModule,
+    ModalModule
   ],
   providers: [NgOdinsonService]
 })

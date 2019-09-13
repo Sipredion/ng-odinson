@@ -1,0 +1,7 @@
+<div class="odn-panel-menu">
+  <ng-container *ngFor="let item of menuItems">
+    <ng-container *ngIf="item.isLink">
+      <a class="odn-panel-link" [routerLink]="item.path">{{item.title}}</a>
+    </ng-container>
+  </ng-container>
+</div>
